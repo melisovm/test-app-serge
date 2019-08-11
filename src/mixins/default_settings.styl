@@ -1,0 +1,57 @@
+justify-content($value)
+  if $value is flex-start
+    -webkit-box-pack start
+    -ms-flex-pack start
+  else if $value is flex-end
+    -webkit-box-pack end
+    -ms-flex-pack end
+  else if $value is space-between
+    -webkit-box-pack justify
+    -ms-flex-pack justify
+  else
+    -webkit-box-pack $value
+    -ms-flex-pack $value
+    justify-content $value
+
+  -webkit-justify-content $value
+  -moz-justify-content $value
+  justify-content $value
+
+justify-content $value
+
+  align-items($value)
+  if $value is flex-start
+    -webkit-box-align start
+    -ms-flex-align start
+  else if $value is flex-end
+    -webkit-box-align end
+    -ms-flex-align end
+  else
+    -webkit-box-align $value
+    -ms-flex-align $value
+
+  -webkit-align-items $value
+  -moz-align-items $value
+
+align-items $value
+.test
+  border 1px solid red
+
+.full_height
+  min-height 100vh
+
+.flex
+  display flex
+  flex-direction column
+
+.center
+  align-items center
+  justify-content center
+
+.cursor__pointer
+  cursor pointer
+
+.unselectable
+  user-select none
+
+
